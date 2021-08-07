@@ -1,0 +1,35 @@
+.features {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-dark-color);
+}

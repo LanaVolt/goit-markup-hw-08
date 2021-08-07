@@ -1,0 +1,43 @@
+.team {
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-background-color);
+
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white);
+  box-shadow: var(--card-shadow);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-about {
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.team-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: var(--primary-dark-color);
+}
+
+.team-position {
+  margin-bottom: 16px;
+  line-height: 0.84;
+}
