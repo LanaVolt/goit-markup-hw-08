@@ -1,16 +1,22 @@
 .btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio__btn-list {
+  margin-top: -15px;
   margin-bottom: 50px;
+  margin-left: -8px;
 }
 
 .btn-list__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .btn-list__button {
@@ -45,13 +51,44 @@
 
 .card-set {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .card-set__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
+
+// .card {
+//   flex-grow: 1;
+//   display: flex;
+//   flex-direction: column;
 
 .card {
   display: block;
@@ -67,7 +104,6 @@
   position: relative;
   overflow: hidden;
 }
-/* div.card-img-box>p.text-overlay */
 
 .card__text {
   display: block;
@@ -94,6 +130,7 @@
 }
 
 .card__wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

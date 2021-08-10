@@ -6,14 +6,35 @@
 
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer__address {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    display: inline-block;
+  }
 }
 
 .address {
+  margin-top: 20px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -26,53 +47,101 @@
 }
 
 .address__location {
-  margin-bottom: 9px;
   color: var(--primary-white);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address__link {
   color: var(--secondary-white);
   transition: color 250ms var(--timing-function);
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     color: var(--primary-white);
   }
 }
 
-.footer__join {
-  margin-left: 70px;
+.address__list {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
+.footer-join {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
+}
+// .footer__join {
+//   margin-left: 70px;
+// }
 .footer__join-text {
   margin-bottom: 20px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white);
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__subscribe {
-  margin-left: 92px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .subscribe {
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+// .footer__mail {
+//   margin-bottom: 20px;
+
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 12px;
+//     margin-bottom: 0;
+//   }
+// }
 .subscribe__field {
   width: 358px;
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
 
   color: var(--primary-white);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: var(--modal-btn-shadow);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   &::placeholder {
     font-size: 16px;
