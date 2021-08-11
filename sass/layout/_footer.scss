@@ -10,10 +10,7 @@
   align-items: center;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -26,6 +23,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -73,8 +71,8 @@
   }
 }
 
-.footer-join {
-  margin-top: 60px;
+.footer__join {
+  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
@@ -83,9 +81,7 @@
     margin-right: 92px;
   }
 }
-// .footer__join {
-//   margin-left: 70px;
-// }
+
 .footer__join-text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -100,13 +96,11 @@
   }
 }
 
-.footer__subscribe {
-  margin-top: 60px;
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
-  }
-}
+// .footer__subscribe {
+//   @media screen and (min-width: 1200px) {
+//     margin-top: 0;
+//   }
+// }
 
 .subscribe {
   display: flex;
@@ -117,14 +111,7 @@
     flex-direction: row;
   }
 }
-// .footer__mail {
-//   margin-bottom: 20px;
 
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 12px;
-//     margin-bottom: 0;
-//   }
-// }
 .subscribe__field {
   width: 358px;
   height: 50px;

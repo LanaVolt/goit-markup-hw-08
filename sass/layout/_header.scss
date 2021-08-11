@@ -78,8 +78,8 @@
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 22px;
+  right: 26px;
 
   background-color: transparent;
   border: none;
@@ -99,6 +99,7 @@
 }
 
 .mobile-nav {
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -119,6 +120,10 @@
   color: var(--primary-accent-color);
 }
 
+.mobile-contact {
+  margin-bottom: 64px;
+}
+
 .mobile-contact__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -130,6 +135,8 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+
+  color: var(--primary-accent-color);
 }
 
 .mobile-contact__link-mail {

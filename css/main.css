@@ -503,8 +503,8 @@ ul {
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 22px;
+  right: 26px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -519,6 +519,7 @@ ul {
 }
 
 .mobile-nav {
+  margin-bottom: 64px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -537,6 +538,10 @@ ul {
   color: var(--primary-accent-color);
 }
 
+.mobile-contact {
+  margin-bottom: 64px;
+}
+
 .mobile-contact__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -546,6 +551,7 @@ ul {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: var(--primary-accent-color);
 }
 
 .mobile-contact__link-mail {
@@ -710,7 +716,7 @@ ul {
   background-image: linear-gradient(var(--primary-overlay-color), var(--primary-overlay-color)), url(".././images/mobile/hero.jpg");
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(var(--primary-overlay-color), var(--primary-overlay-color)), url(".././images/mobile/hero2x.jpg");
   }
@@ -1195,10 +1201,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .footer__container {
-    flex-direction: row;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 0 auto;
   }
 }
 
@@ -1213,6 +1216,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1263,18 +1267,18 @@ ul {
   }
 }
 
-.footer-join {
-  margin-top: 60px;
+.footer__join {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-join {
+  .footer__join {
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-join {
+  .footer__join {
     margin-right: 92px;
   }
 }
@@ -1292,16 +1296,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__join-text {
     text-align: left;
-  }
-}
-
-.footer__subscribe {
-  margin-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__subscribe {
-    margin-top: 0;
   }
 }
 
